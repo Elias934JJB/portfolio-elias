@@ -10,6 +10,9 @@ BRANCH="gh-pages"
 # Build Astro
 npm run build || { echo "Erreur lors du build Astro"; exit 1; }
 
+# Supprime les anciens fichiers
+rm -rf _astro images themes *.html *.css *.js *.svg *.jpg *.png *.pdf
+
 # Copie les fichiers du dossier dist à la racine
 cp -r dist/* . || { echo "Erreur lors de la copie des fichiers"; exit 1; }
 
