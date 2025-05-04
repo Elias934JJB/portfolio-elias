@@ -10,7 +10,8 @@ BRANCH="gh-pages"
 # Build Astro
 npm run build || { echo "Erreur lors du build Astro"; exit 1; }
 
-cd dist || { echo "Le dossier dist n'existe pas"; exit 1; }
+# Copie les fichiers du dossier dist à la racine
+cp -r dist/* . || { echo "Erreur lors de la copie des fichiers"; exit 1; }
 
 git init
 
