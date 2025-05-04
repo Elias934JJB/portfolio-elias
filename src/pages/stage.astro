@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { basics } from "@cv";
+const { name } = basics;
+---
+
+<Layout title={`${name} - Stages à l'école IRIS`}>
+	<main class="relative max-w-7xl p-8 md:p-16 bg-skin-fill min-h-screen flex flex-col items-center justify-center">
+		<a href="/" class="inline-block mb-8 rounded-lg bg-skin-hue px-4 py-2 text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors">← Retour à l'accueil</a>
+		<h1 class="text-3xl font-bold mb-8 text-skin-base">Mes stages à l'école IRIS</h1>
+		<div class="flex gap-6">
+			<a href="/stage1" class="px-6 py-3 rounded-lg bg-skin-hue text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors">Voir Stage 1</a>
+			<a href="/stage2" class="px-6 py-3 rounded-lg bg-skin-hue text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors">Voir Stage 2</a>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		width: 100%;
+		background: var(--color-bg, #fff);
+		border-radius: 1.5rem;
+		box-shadow: 0 4px 32px 0 rgba(0,0,0,0.07);
+	}
+</style> 

@@ -1,0 +1,100 @@
+---
+import Section from "../Section.astro"
+import { work } from "@cv"
+
+import HTML from "@/icons/html.astro"
+import CSS from "@/icons/css.astro"
+import JavaScript from "@/icons/javascript.astro"
+import TypeScript from "@/icons/type.astro"
+import React from "@/icons/react.astro"
+import Node from "@/icons/node.astro"
+import MySQL from "@/icons/sql.astro"
+import Git from "@/icons/git.astro"
+import GitHub from "@/icons/GitHub.astro"
+import Tailwind from "@/icons/tailwind.astro"
+import Next from "@/icons/next.astro"
+import Swift from "@/icons/swift.astro"
+import SwiftUI from "@/icons/swiftui.astro"
+import Kotlin from "@/icons/kotlin.astro"
+import Flutter from "@/icons/flutter.astro"
+
+interface WorkExperience {
+  name: string;
+  position: string;
+  location_type: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  summary: string;
+  skills?: string[];
+}
+
+const work_experiences = work as WorkExperience[];
+
+const SKILLS_ICONS: Record<string, any> = {
+  HTML,
+  CSS,
+  JavaScript,
+  TypeScript,
+  React,
+  Node,
+  MySQL,
+  Git,
+  GitHub,
+  Next,
+  Tailwind,
+  Swift,
+  SwiftUI,
+  Kotlin,
+  Flutter,
+}
+---
+<Section className={Astro.props.className} title="Expérience">
+	<ul class="space-y-4 py-3 print:space-y-0">
+		{
+			work_experiences.map(({ name, position, startDate, endDate, summary, location, skills = [] }) => {
+				const startYear = new Date(startDate).getFullYear();
+				const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actual";
+				const years = `${startYear} - ${endYear}`;
+
+				return (
+					<div class="flex items-baseline">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 hidden h-5 w-5 self-start md:inline-block print:hidden">
+							<path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6" />
+							<path d="M21 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2" />
+							<path d="M3 7h18" />
+							<path d="M9 5v2" />
+							<path d="M15 5v2" />
+						</svg>
+						<div class="relative w-full items-baseline justify-between gap-2">
+							<h3 class="mr-6 items-baseline gap-x-2 gap-y-0.5 font-medium">
+								<span class="text-skin-base">{name}</span>
+								<span class="text-sm text-skin-muted">- {position}</span>
+							</h3>
+							<div class="text-sm text-skin-muted">{location}</div>
+							<time class="right-0 top-0 text-xs text-skin-muted md:absolute md:block">{years}</time>
+							<p class="text-sm text-skin-muted">{summary}</p>
+							{skills && (
+								<ul class="mt-2 flex flex-wrap gap-2">
+									{skills.map((skill: string) => (
+										<li class="rounded-full bg-skin-hue/10 px-3 py-1 text-xs text-skin-hue">
+											{skill}
+										</li>
+									))}
+								</ul>
+							)}
+						</div>
+					</div>
+				);
+			})
+		}
+	</ul>
+</Section>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<style>
+  li::marker {
+    @apply text-skin-hue
+  }
+</style>

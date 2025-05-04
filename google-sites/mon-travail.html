@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Travail - Portfolio Elias</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .project-title {
+            color: #2d3748;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .project-description {
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        .project-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4299e1;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .project-link:hover {
+            background-color: #3182ce;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #718096;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-button">← Retour à l'accueil</a>
+        
+        <div class="header">
+            <h1>Mes réalisations</h1>
+            <p>Découvrez mes projets réalisés pendant ma formation</p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h2 class="project-title">EPS2 - Auto-école Castellane</h2>
+                <p class="project-description">Gestion des leçons pour l'auto-école Castellane. Système de planification et de suivi des élèves.</p>
+                <a href="/eps2" class="project-link">Voir le projet</a>
+            </div>
+
+            <div class="project-card">
+                <h2 class="project-title">GLPI - Gestion de parc</h2>
+                <p class="project-description">Mise en place et configuration d'un système de gestion de parc informatique avec GLPI.</p>
+                <a href="/glpi" class="project-link">Voir le projet</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

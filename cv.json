@@ -1,0 +1,146 @@
+{
+  "basics": {
+    "name": "Elias Adjabi",
+    "label": "Etudiant en BTS SIO - Option SLAM",
+    "image": "/me_avatar.jpg",
+    "email": "eliasadjabi@gmail.com",
+    "phone": "06 24 75 75 31",
+    "url": "http://localhost:4321",
+    "theme": "light",
+    "location": {
+      "address": "Saint-Ouen-sur-Seine",
+      "postalCode": "93400",
+      "city": "Paris",
+      "countryCode": "FR",
+      "region": "Île-de-France"
+    },
+    "summary": "Etudiant motivé, dynamique et curieux, actuellement en 2ème année de BTS SIO option SLAM à l'IRIS Informatique. Passionné par le développement informatique, les réseaux et la cybersécurité.",
+    "profiles": []
+  },
+  "work": [
+    {
+      "name": "IRIS Informatique",
+      "position": "Stagiaire Développeur",
+      "location_type": "On site",
+      "location": "Paris 75017",
+      "startDate": "2024-06-24",
+      "endDate": "2024-07-26",
+      "summary": "Stage de développement informatique durant l'été 2024. Participation à des projets en lien avec le développement web et la gestion de bases de données."
+    },
+    {
+      "name": "IRIS Informatique",
+      "position": "Stagiaire Développeur",
+      "location_type": "On site",
+      "location": "Paris 75017",
+      "startDate": "2024-11-25",
+      "endDate": "2024-12-23",
+      "summary": "Deuxième stage de développement axé sur le perfectionnement des compétences en programmation et en gestion de données."
+    },
+    {
+      "name": "Ecole Primaire Michelet",
+      "position": "Animateur Stagiaire",
+      "location_type": "On site",
+      "location": "Saint-Ouen-sur-Seine",
+      "startDate": "2020-03-30",
+      "endDate": "2020-04-30",
+      "summary": "Stage d'animation réalisé durant la classe de troisième."
+    }
+  ],
+  "education": [
+    {
+      "institution": "IRIS Informatique",
+      "area": "Service Informatique aux Organisations (Option SLAM)",
+      "studyType": "BTS",
+      "startDate": "2023-09-01",
+      "endDate": "2025-06-01",
+      "score": null,
+      "url": "https://www.iris-informatique.com/"
+    },
+    {
+      "institution": "Lycée Blanqui",
+      "area": "Littérature, Langues et Cultures Étrangères (LLCE)",
+      "studyType": "Baccalauréat Général",
+      "startDate": "2022-09-01",
+      "endDate": "2023-06-01",
+      "score": null,
+      "url": "https://lyc-blanqui-saint-ouen.ac-creteil.fr/"
+    },
+    {
+      "institution": "Collège Jules Michelet",
+      "area": "Brevet des Collèges",
+      "studyType": "Brevet des Collèges",
+      "startDate": "2017-09-01",
+      "endDate": "2020-06-01",
+      "score": null,
+      "url": "https://clg-michelet-saint-ouen.ac-creteil.fr/"
+    }
+  ],
+  "skills": [
+    {"name": "HTML/CSS", "level": "Intermediate", "keywords": ["Web Development", "Frontend"]},
+    {"name": "Packet Tracer", "level": "Beginner", "keywords": ["Network Simulation"]},
+    {"name": "PHPMyAdmin", "level": "Intermediate", "keywords": ["Database Management"]},
+    {"name": "Linux", "level": "Beginner", "keywords": ["Operating System", "Command Line"]},
+    {"name": "Cybersécurité", "level": "Beginner", "keywords": ["Network Security", "Information Protection"]},
+    {"name": "MCD/MLD", "level": "Intermediate", "keywords": ["Database Modeling"]}
+  ],
+  "languages": [
+    {"language": "Français", "fluency": "C1"},
+    {"language": "Anglais", "fluency": "B2"}
+  ],
+  "interests": [
+    {
+      "name": "Sports",
+      "keywords": ["Judo", "Basket-ball", "Boxe"]
+    },
+    {
+      "name": "Voyages",
+      "keywords": ["Angleterre", "Italie", "France"]
+    }
+  ],
+  "volunteer": [],
+  "certificates": [
+    {
+      "name": "Brevet des Collèges",
+      "date": "2020-06-01",
+      "issuer": "Collège Jules Michelet",
+      "url": "https://clg-michelet-saint-ouen.ac-creteil.fr/"
+    },
+    {
+      "name": "Baccalauréat Général - LLCE",
+      "date": "2023-06-01",
+      "issuer": "Lycée Blanqui",
+      "url": "https://lyc-blanqui-saint-ouen.ac-creteil.fr/"
+    },
+    {
+      "name": "BTS SIO - Option SLAM (en cours)",
+      "date": "2025-06-01",
+      "issuer": "IRIS Informatique",
+      "url": "https://www.iris-informatique.com/"
+    }
+  ],
+  "references": [],
+  "veilleTechnologique": {
+    "theme": "Nano-ordinateurs",
+    "description": "La veille technologique sur les nano-ordinateurs permet de suivre l'évolution de ces technologies utilisées notamment pour les IoT (objets connectés). Cette veille est réalisée à l'aide d'outils comme Google Alerts pour rester informé des dernières innovations dans ce domaine.",
+    "articles": [
+      {
+        "title": "Raspberry Pi ajoute de nouvelles options de mémoire à ses cartes compactes Compute Module 4S",
+        "source": "Netcost",
+        "date": "2024-04-29",
+        "url": "https://www.netcost-security.fr/actualites/raspberry-pi-compute-module-4s/"
+      },
+      {
+        "title": "RISC-V on Raspberry Pi Pico 2",
+        "source": "raspberrypi.com",
+        "date": "2024-09-25",
+        "url": "https://www.raspberrypi.com/news/risc-v-on-raspberry-pi-pico-2/"
+      },
+      {
+        "title": "Lancement de l'Arduino Nano Matter",
+        "source": "matteralpha.com",
+        "date": "2025-01-24",
+        "url": "https://matteralpha.com/arduino-nano-matter"
+      }
+    ]
+  }
+}

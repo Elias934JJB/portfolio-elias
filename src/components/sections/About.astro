@@ -1,0 +1,10 @@
+---
+import Section from "../Section.astro";
+
+import { basics } from "@cv";
+const { summary } = basics;
+---
+
+<Section className={Astro.props.className} title="À propos">
+	<p class="text-sm text-skin-muted">{summary}</p>
+</Section>

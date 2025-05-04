@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Stages - Portfolio Elias</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .stages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .stage-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .stage-title {
+            color: #2d3748;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .stage-description {
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        .stage-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4299e1;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .stage-link:hover {
+            background-color: #3182ce;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #718096;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-button">← Retour à l'accueil</a>
+        
+        <div class="header">
+            <h1>Mes stages à l'école IRIS</h1>
+            <p>Découvrez mes expériences professionnelles en entreprise</p>
+        </div>
+
+        <div class="stages-grid">
+            <div class="stage-card">
+                <h2 class="stage-title">Stage 1 - Events Paris</h2>
+                <p class="stage-description">Développement d'une application mobile pour la transformation digitale d'une entreprise d'événementiel.</p>
+                <a href="/stage1" class="stage-link">Voir les détails</a>
+            </div>
+
+            <div class="stage-card">
+                <h2 class="stage-title">Stage 2 - E-commerce</h2>
+                <p class="stage-description">Création d'une plateforme e-commerce spécialisée dans la vente de ballons de football.</p>
+                <a href="/stage2" class="stage-link">Voir les détails</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

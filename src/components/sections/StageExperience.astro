@@ -1,0 +1,78 @@
+---
+import Section from "@/components/Section.astro";
+---
+
+<Section title="Stage chez Events Paris">
+  <div class="relative space-y-8 py-3">
+    <div class="flex gap-4 mb-6">
+      <button id="btn-stage-2" class="px-4 py-2 rounded bg-skin-hue text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors" onclick="showStage(2)">Stage 2</button>
+    </div>
+    <div id="stage-1-section">
+      <div class="bg-skin-fill/60 rounded-lg p-4 shadow-sm">
+        <h3 class="text-lg font-semibold text-skin-base">Développement d'une application mobile pour la transformation digitale</h3>
+        <div class="mt-2 space-y-2">
+          <p class="text-sm text-skin-muted">
+            <span class="font-semibold">Contexte :</span> Events Paris, entreprise spécialisée dans l'organisation d'événements à Paris, a initié un vaste projet de transformation digitale.
+          </p>
+          <p class="text-sm text-skin-muted">
+            <span class="font-semibold">Mission :</span> Développement d'une application mobile multiplateforme permettant aux visiteurs de prolonger leur expérience événementielle en partageant leurs moments forts et en maintenant le contact avec les exposants et autres visiteurs.
+          </p>
+          <div class="mt-3">
+            <h4 class="text-sm font-semibold text-skin-base">Compétences développées :</h4>
+            <ul class="list-disc list-inside text-sm text-skin-muted mt-1">
+              <li>Développement d'applications multiplateformes</li>
+              <li>Gestion de projet de transformation digitale</li>
+              <li>Conception d'interface utilisateur selon une charte graphique spécifique</li>
+              <li>Intégration de fonctionnalités sociales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-skin-fill/60 rounded-lg p-4 shadow-sm mt-8">
+        <h4 class="text-lg font-semibold text-skin-base mb-3">Fonctionnalités développées lors du stage</h4>
+        <ul class="list-disc list-inside text-skin-base space-y-1">
+          <li>Développement d'un système de billetterie en ligne avec gestion des stocks en temps réel</li>
+          <li>Affichage dynamique des types de billets disponibles et de leur stock</li>
+          <li>Formulaire de réservation sécurisé avec génération d'un code de réservation unique</li>
+          <li>Gestion de la confirmation de réservation et affichage des détails à l'utilisateur</li>
+          <li>Envoi d'un email de confirmation (simulation dans le code)</li>
+          <li>Gestion des événements et affichage du programme du festival</li>
+          <li>Utilisation de Bootstrap pour un design moderne et responsive</li>
+          <li>Respect des bonnes pratiques de sécurité (requêtes préparées, validation des données)</li>
+        </ul>
+      </div>
+    </div>
+    <div id="stage-2-section" style="display:none;">
+      <div class="bg-skin-fill/60 rounded-lg p-4 shadow-sm">
+        <h2 class="text-2xl font-bold mb-4 text-skin-base">Stage 2 – Développement d'un site e-commerce de vente de ballons de football</h2>
+        <p class="mb-4 text-skin-muted">
+          Stage réalisé en première année de BTS SIO, centré sur la création d'un site vitrine avec panier pour vendre des ballons de football. L'objectif était de permettre à un client de gérer facilement son catalogue et de proposer une expérience d'achat simple et efficace.
+        </p>
+        <ol class="list-decimal list-inside space-y-1 text-skin-base">
+          <li>Réunion de cadrage avec le client pour identifier les besoins du site</li>
+          <li>Création de la maquette du site avec Figma</li>
+          <li>Développement du site avec HTML, CSS et un peu de JavaScript</li>
+          <li>Intégration d'un panier simple (ajouter/supprimer des articles)</li>
+          <li>Mise en ligne locale sur un serveur XAMPP pour présentation au client</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showStage(num: number) {
+      const stage1 = document.getElementById('stage-1-section');
+      const stage2 = document.getElementById('stage-2-section');
+      
+      if (stage1 && stage2) {
+        stage1.style.display = num === 1 ? 'block' : 'none';
+        stage2.style.display = num === 2 ? 'block' : 'none';
+      }
+    }
+    // Affiche le stage 1 par défaut
+    showStage(1);
+  </script>
+</Section>
+
+<style>
+  .shadow-sm { box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06); }
+</style> 
