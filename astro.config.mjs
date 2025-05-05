@@ -8,5 +8,10 @@ export default defineConfig({
   integrations: [tailwind()],
   build: {
     assets: '_assets'
+  },
+  vite: {
+    build: {
+      assetsInlineLimit: 0
+    }
   }
 });
