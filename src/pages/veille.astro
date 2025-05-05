@@ -7,7 +7,13 @@ const { name } = basics;
 
 <Layout title={`${name} - Veille Technologique`}>
 	<main class="relative max-w-7xl p-8 md:p-16 bg-skin-fill min-h-screen">
-		<a href="/" class="inline-block mb-8 rounded-lg bg-skin-hue px-4 py-2 text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors">← Retour à l'accueil</a>
+		<a href="/portfolio-elias/" class="inline-block mb-8 rounded-lg bg-skin-hue px-4 py-2 text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors">← Retour à l'accueil</a>
+		<div class="flex flex-wrap gap-4 justify-center my-8">
+			<a href="/portfolio-elias/" class="px-6 py-3 rounded-lg bg-skin-hue text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors">Accueil</a>
+			<a href="/portfolio-elias/mon-travail" class="px-6 py-3 rounded-lg bg-skin-hue text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors">Mon Travail</a>
+			<a href="/portfolio-elias/stage" class="px-6 py-3 rounded-lg bg-skin-hue text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors">Stages IRIS</a>
+			<a href="/portfolio-elias/CV.pdf.pdf" class="px-6 py-3 rounded-lg bg-skin-hue text-white font-semibold shadow hover:bg-skin-hue/90 transition-colors" target="_blank">Mon CV (PDF)</a>
+		</div>
 		<VeilleTechnologique />
 	</main>
 </Layout>
