@@ -35,17 +35,24 @@ import Theme from "@/icons/themeSwitch.astro";
 		if (theme !== null) {
 			select.value = theme;
 		} else {
-			select.value = systemTheme;
+			select.value = "system";
 		}
 
 		function updateTheme(value: string) {
 			const theme = value === "system" ? systemTheme : value;
-			document.documentElement.classList.remove("light", "dark");
-			document.documentElement.classList.add(theme);
+			document.documentElement.setAttribute('data-theme', theme);
 			localStorage.setItem("theme", value);
 		}
 
+		// Initial theme setup
 		updateTheme(select.value);
+
+		// Watch for system theme changes
+		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+			if (select.value === 'system') {
+				updateTheme('system');
+			}
+		});
 
 		select.addEventListener("change", (event: Event) => {
 			const select = event.target as HTMLSelectElement;
