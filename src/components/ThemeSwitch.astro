@@ -35,7 +35,8 @@ import Theme from "@/icons/themeSwitch.astro";
 		if (theme !== null) {
 			select.value = theme;
 		} else {
-			select.value = "system";
+			select.value = "dark";
+			localStorage.setItem("theme", "dark");
 		}
 
 		function updateTheme(value: string) {
